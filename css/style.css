@@ -47,6 +47,12 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section--bgc-greylight {
+    background: #F5F4FA;
+}
+.section--size-top {
+    padding-top: 0;
+}
 /* =============Header============ */
 .header {
     border-bottom: 1px solid #ECECEC; 
@@ -383,7 +389,6 @@ margin-bottom: 10px;
 
 .advantage {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .advantage__item {
@@ -404,11 +409,7 @@ margin-bottom: 10px;
     line-height: 1.7;
 }
 
-/*works*/
-.section--size-top {
-    padding-top: 0;
-}
-
+/*===============works===============*/
 .works__title,
 .stuff__title {
     margin-bottom: 50px;
@@ -421,7 +422,6 @@ margin-bottom: 10px;
 
 .works__list {
     display: flex;
-    flex-wrap: wrap;
 }
 .works__item:not(:last-child) {
     margin-right: 30px;
@@ -435,7 +435,6 @@ margin-bottom: 10px;
     width: 100%;
     height: 70px;
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
@@ -445,62 +444,56 @@ margin-bottom: 10px;
     bottom: 0;
     left: 0;
  }
-/*stuff*/
-.stuff {
-    background: #F5F4FA;
-}
-.stuff-list {
+/*====================stuff==============*/
+.stuff__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.stuff-list .item + .item {
-    margin-left: 30px;
+.stuff__item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.stuff-title-name {
-    margin-top: 0;
+.stuff__title-name {
     margin-bottom: 10px;
     font-weight: 500;
     text-align: center;
     color: var(--title-text-color);
 }
-.stuff-posotion,
-.stuff-title-name {
+.stuff__position,
+.stuff__title-name {
     font-size: 16px;
     line-height: 1.19;
 }
-.stuff-position {
-    margin-top: 0;
+.stuff__position {
     margin-bottom: 16px;
     text-align: center;
 }
-.stuff-list .item {
+.stuff__list .stuff__item {
     background: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.stuff-card {
-    display: block; 
+.stuff__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.social-stuff {
+.stuff-social {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 32px;
     padding-right: 32px;
 }
-.social-stuff-item {
+/* .stuff-social__item {
     justify-content: center;
     background-position: center;
+} */
+.stuff-social__item:not(:last-child) {
+   margin-right: 10px; 
 }
-.social-stuff-item + .social-stuff-item {
-   margin-left: 10px; 
-}
-.stuff-link {
+.stuff-social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -511,21 +504,16 @@ margin-bottom: 10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.stuff-social__icon {
     fill: var(--primary-icon-color); 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
 }
-.stuff-link:hover,
-.stuff-link:focus {
+.stuff-social__link:hover,
+.stuff-social__link:focus {
     background-color: var(--accent-color);
 }
-.stuff-link:hover .social-icon,
-.stuff-link:focus .social-icon {
+.stuff-social__link:hover .stuff-social__icon,
+.stuff-social__link:focus .stuff-social__icon {
     fill: var(--hero-color);
 }
 
