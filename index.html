@@ -14,8 +14,8 @@
  <header class="header">
     <div class="container header__container">
     <a href="index.html" class="logo logo--distance-right"><span class="logo--color-blue">Web</span>Studio</a>
-    <nav class="site-nav">
-        <ul class="site-nav__list">
+    <nav>
+        <ul class="site-nav container__list">
             <li class="site-nav__item">
                 <a href="index.html" class="site-nav__link site-nav__link--position">Студія</a>
             </li>
@@ -27,7 +27,7 @@
             </li>
         </ul>
     </nav>
-    <ul class="contact">
+    <ul class="contact container__list">
         <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
                 <svg class="contact__icon" width="16px" height="12px">
@@ -37,7 +37,7 @@
         </li>
         <li class="contact__item">
             <a href="tel:+380961111111" class="contact__link">
-                <svg class="contact__icon" width="10px" height="16px">
+                <svg class="contact__icon" width="16px" height="12px">
                     <use href="./images/icon/sprite.svg#smartphone"></use>
                 </svg>+38096 111 11 11</a>
         </li>
@@ -100,7 +100,7 @@
     <section class="section">
         <div class="container">
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="advantage"> 
+        <ul class="advantage container__list"> 
             <li class="advantage__item">
                 <div class="advantage__icon">
                 <svg width="65px" height="70px">
@@ -151,8 +151,8 @@
     <!--Works-->
     <section class="section section--size-top">
         <div class="container">
-        <h2 class="works__title">Чим ми займаємось</h2>
-        <ul class="works__list">
+        <h2 class="container__title">Чим ми займаємось</h2>
+        <ul class="works container__list">
             <li class="works__item">
                 <img src="./images/work1.jpg" alt="Набор проэкта"
                 width="370" height="294">
@@ -174,8 +174,8 @@
     <!--Stuff-->
     <section class="section section--bgc-greylight">
         <div class="container">
-        <h2 class="stuff__title">Наша команда</h2>
-        <ul class="stuff__list">
+        <h2 class="container__title">Наша команда</h2>
+        <ul class="stuff container__list">
             <li class="stuff__item">
                 <img src="./images/face1.jpg" alt="Ігор Дем'яненко" 
                 width="270" height="260">
@@ -342,46 +342,46 @@
     <!-- Clients -->
     <section class="section">
         <div class="container">
-            <h2 class="works__title">Постійні клієнти</h2>
-            <ul class="client-list">
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+            <h2 class="container__title">Постійні клієнти</h2>
+            <ul class="client container__list">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo1"></use>
                         </svg> 
                     </a>
                 </li>
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo2"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo3"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo4"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo5"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="client-item">
-                    <a class="client-link" href="#">
-                        <svg class="client-icon" width="106px" height="60px">
+                <li class="client__item">
+                    <a class="client__link" href="#">
+                        <svg class="client__icon" width="106px" height="60px">
                             <use href="./images/icon/sprite.svg#logo6"></use>
                         </svg>
                     </a>
@@ -391,42 +391,42 @@
     </section>
  </main>
  <footer class="footer">
-    <div class="container footer-block">
+    <div class="container footer--centered">
         <div>
-            <a href="index.html" class="logo-bottom"><span class="logo-text">Web</span>Studio</a>
+            <a href="index.html" class="logo logo--margin-bottom logo--color-white"><span class="logo--color-blue">Web</span>Studio</a>
             <address class="address">
-                <p class="address-street">м. Київ, пр-т Лесі Українки, 26</p> 
-                <a class="address-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a> 
-                <a class="address-link tel" href="tel:+380961111111">+38096 111 11 11</a>
-        </address>
+                <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p> 
+                <a class="address__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a> 
+                <a class="address__link tel" href="tel:+380961111111">+38096 111 11 11</a>
+            </address>
         </div>
-        <div class="social-footer">
-            <h2 class="footer-title">Приєднуйтесь</h2>
-            <ul class="social-footer-list">
-                <li class="social-footer-item">
-                    <a href="#" class="social-footer-link">
-                        <svg class="social-footer-icon" width="20px" height="20px">
+        <div class="join-footer">
+            <h2 class="footer__title">Приєднуйтесь</h2>
+            <ul class="join-footer__list">
+                <li class="join-footer__item">
+                    <a href="#" class="join-footer__link">
+                        <svg class="join-footer__icon" width="20px" height="20px">
                             <use href="./images/icon/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-footer-item">
-                    <a href="#" class="social-footer-link">
-                        <svg class="social-footer-icon" width="20px" height="20px">
+                <li class="join-footer__item">
+                    <a href="#" class="join-footer__link">
+                        <svg class="join-footer__icon" width="20px" height="20px">
                             <use href="./images/icon/sprite.svg#twitter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-footer-item">
-                    <a href="#" class="social-footer-link">
-                        <svg class="social-footer-icon" width="20px" height="20px">
+                <li class="join-footer__item">
+                    <a href="#" class="join-footer__link">
+                        <svg class="join-footer__icon" width="20px" height="20px">
                             <use href="./images/icon/sprite.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-footer-item">
-                    <a href="#" class="social-footer-link">
-                        <svg class="social-footer-icon" width="20px" height="20px">
+                <li class="join-footer__item">
+                    <a href="#" class="join-footer__link">
+                        <svg class="join-footer__icon" width="20px" height="20px">
                             <use href="./images/icon/sprite.svg#linkedin"></use>
                         </svg>
                     </a>
@@ -434,12 +434,12 @@
             </ul>
         </div>
         <form class="subscribe">
-            <h2 class="footer-title">Підпишіться на розсилку</h2>
-            <div class="mail-input">
-                <input class="subscribe-input" type="email" name="mail" id="mail" placeholder="E-mail">
-                <label class="mail-label" for="mail"></label>
-                <button class="subscribe-btn" type="submit">Підписатися 
-                    <svg class="subscribe-icon" width="24px" height="24px">
+            <h2 class="footer__title">Підпишіться на розсилку</h2>
+            <div class="subscribe__form">
+                <input class="subscribe__input" type="email" name="mail" id="mail" placeholder="E-mail">
+                <label for="mail"></label>
+                <button class="subscribe__btn" type="submit">Підписатися 
+                    <svg class="subscribe__icon" width="24px" height="24px">
                     <use href="./images/icon/sprite.svg#send"></use>
                 </svg> </button>
             </div>
